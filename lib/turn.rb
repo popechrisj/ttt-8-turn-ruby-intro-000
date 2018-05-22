@@ -9,8 +9,8 @@ def turn(board)
   else
     puts "Invalid input"
     display_board(board)
+    turn(board)
   end
-  turn(board)
 end
 
 def display_board(board)
