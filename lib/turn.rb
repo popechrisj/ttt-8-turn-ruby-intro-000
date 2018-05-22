@@ -1,6 +1,6 @@
 def turn(board)
-  input = "0"
-  index = 0
+  input = 0
+  index = -1
   while valid_move?(board, index) == false && position_taken?(board, index) == false
     puts "Where would you like to go?"
     puts "Please enter 1-9:"
