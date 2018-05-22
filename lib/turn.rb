@@ -1,5 +1,5 @@
 def turn(board)
-  input = nil
+  input = "0"
   index = 0
   while valid_move?(board, index) == false && position_taken?(board, index) == false
     puts "Where would you like to go?"
