@@ -1,13 +1,8 @@
 def turn(board)
-  input = 0
-  index = -1
-  while valid_move?(board, index) == false && position_taken?(board, index) == false
-    display_board(board)
-    puts "Where would you like to go?"
-    puts "Please enter 1-9:"
-    input = gets.strip
-    index = input_to_index(input)
-  end
+  puts "Where would you like to go?"
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
   move(board, index)
 end
 
